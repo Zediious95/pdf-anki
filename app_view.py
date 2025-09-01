@@ -97,9 +97,9 @@ class AppView:
                 if st.button("Add All Active Cards to Anki"):
                     self.add_all_flashcards_to_anki()
 
-        st.header('Powered by GPT 4o mini from OpenAI')
+        st.header('Powered by GPT 5 mini from OpenAI')
 
-        # TODO: Check if GPT-4 is available and if openai account has enough credits
+        # TODO: Check if GPT-5 is available and if openai account has enough credits
         if "no_ankiconnect" in st.session_state and st.session_state.no_ankiconnect == False:
             if "api_perms" not in st.session_state:
                 self.actions.check_API()
