@@ -54,7 +54,7 @@ class Actions:
 
         try:
             completion = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="gpt-5-mini",
                 messages=[
                     {"role": "system", "content": "You are a helpful assistant."},
                     {"role": "user", "content": f"Return in one word the language of this text: {text}"}
@@ -336,7 +336,7 @@ End of Example
             return response_data
 
         except Exception as e:
-            print(f"Error with OpenAI's GPT-4o mini: {str(e)}\nReturned:\n{text}")
+            print(f"Error with OpenAI's GPT-5 mini: {str(e)}\nReturned:\n{text}")
 
     def escape_inner_brackets(self, match_obj):
         inner_text = match_obj.group(0)
